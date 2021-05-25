@@ -1,10 +1,11 @@
 var input = require("fs").readFileSync("./dev/stdin", "utf8");
 var lines = input.split("\n");
 
-var employeeNumber = parseInt(lines.shift());
-var workedHours = parseInt(lines.shift());
-var hourlyValue = parseFloat(lines.shift());
+const employeeNumber = parseInt(lines.shift());
+const workedHours = parseInt(lines.shift());
+const hourlyValue = parseFloat(lines.shift());
 
-var employeeSalary = (workedHours * hourlyValue).toFixed(2)
+const employeeSalary = () => (workedHours * hourlyValue).toFixed(2);
 
-console.log('NUMBER = ' + employeeNumber + '\nSALARY = U$ ' + employeeSalary);
+console.log(`NUMBER = ${employeeNumber}
+SALARY = U$ ${employeeSalary()}`);

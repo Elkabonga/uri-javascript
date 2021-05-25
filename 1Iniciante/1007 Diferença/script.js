@@ -1,11 +1,11 @@
 var input = require("fs").readFileSync("./dev/stdin", "utf8");
 var lines = input.split("\n");
 
-var a = parseInt(lines.shift());
-var b = parseInt(lines.shift());
-var c = parseInt(lines.shift());
-var d = parseInt(lines.shift());
+const a = parseInt(lines.shift());
+const b = parseInt(lines.shift());
+const c = parseInt(lines.shift());
+const d = parseInt(lines.shift());
 
-difference = a * b - c * d
+const difference = () => a * b - c * d;
 
-console.log("DIFERENCA = " + difference);
+console.log("DIFERENCA = " + difference());
