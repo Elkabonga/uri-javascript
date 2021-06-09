@@ -2,14 +2,14 @@ var input = require("fs").readFileSync("./dev/stdin", "utf8");
 var lines = input.split("\n");
 
 const myNumberArray1 = lines
-  .shift()
-  .split(" ", 3)
-  .map((x) => +x);
+    .shift()
+    .split(" ", 3)
+    .map((x) => +x);
 
 const myNumberArray2 = lines
-  .shift()
-  .split(" ", 3)
-  .map((x) => +x);
+    .shift()
+    .split(" ", 3)
+    .map((x) => +x);
 
 const calculate = (a, b) => a * b;
 
